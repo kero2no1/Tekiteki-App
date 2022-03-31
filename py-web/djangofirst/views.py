@@ -1,5 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('Hello Hello')
+    
+    context = {
+        'title' : 'はじめての Django Web アプリケーション',
+    }
+    
+    
+    return render(request, 'djangofirst/index.html', context)
