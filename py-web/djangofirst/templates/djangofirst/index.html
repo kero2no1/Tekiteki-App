@@ -13,5 +13,12 @@
 <body>
     <h1>{{ title }}</h1>
     <p>リンクは一旦削除</p>
+    <a href="{% url 'djangofirst:pref_quiz' %}">県庁所在地クイズ</a>
+    <p></p>
+    <a href="{% url 'djangofirst:random_quiz' %}">ランダムクイズ</a>
+    <p></p>
+    <a href="{% url 'djangofirst:wiki' %}">wikipediaで調べる</a>
+    <p></p>
+    
 </body>
 </html>
